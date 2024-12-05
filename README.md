@@ -1,5 +1,8 @@
-# Configuration pour Elasticsearch, Kibana et Logstash
-Ce script installe et configure la stack Elastic (Elasticsearch, Kibana et Logstash) sur une seule machine, en utilisant les paramètres définis dans le fichier .env. Il exécute également plusieurs tâches, telles que la génération de certificats auto-signés et la configuration des fichiers nécessaires. Nous allons mettre en place une stack Elastic comprenant Elasticsearch, Kibana et Logstash, tout en assurant la sécurité des communications entre les différents composants grâce à des certificats auto-signés.
-# Utilisation
-1-Assurez-vous d'avoir défini les variables nécessaires dans le fichier .env avant d'exécuter ce script.
-2-Exécutez le script en tant qu'utilisateur avec les privilèges suffisants.
+# Implémentation du modèle
+La partie suivante sera divisée en trois modules distincts 
+
+Le premier module se concentrera sur l’installation de Suricata et le mappage de ses règles en lien avec le cadre MITRE ATT&CK Nous utiliserons le traitement du langage naturel (NLP) comme modèle de machine learning pour établir ce mappage. Cela permettra d’analyser et d’associer efficacement les règles de détection aux techniques d’attaque identifiées par MITRE.
+
+Le deuxième module sera dédié à l’installation de la pile ELK (Elasticsearch, Log-stash, Kibana) et à son intégration avec Suricata. Cette étape est cruciale pour la collecte, l’analyse et la visualisation des données générées par Suricata, facilitant ainsi une surveillance proactive des menaces.
+
+Enfin, le troisième module se concentrera sur la création d’un modèle d’analyse com- portementale des utilisateurs et des entités (UEBA) destiné à la recherche de menaces, en particulier pour détecter les attaques par déni de service distribué (DDoS). Nous exploiterons les journaux d’Elasticsearch pour développer ce modèle, permettant ainsi une détection avancée des anomalies et des comportements suspects.
