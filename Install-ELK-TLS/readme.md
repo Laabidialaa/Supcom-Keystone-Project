@@ -21,7 +21,7 @@ Pour une installation optimale, la machine doit répondre aux exigences suivante
 Pour installer et utiliser ce script :
 1. Clonez ce dépôt Git sur votre machine locale :
    ```bash
-   git clone https://github.com/Laabidialaa/Supcom-Keystone-Project.git
+   git clone https://github.com/Laabidialaa/Threat-hunting-using-UEBA.git
    cd Install-ELK-TLS
    cp env.sample .env #modifier .env selon vos préférences n oublier pas de modifier la valeur IP_ADDRESS à celle de votre machine
    chmod +x main.sh
